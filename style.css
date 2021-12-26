@@ -33,6 +33,9 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 36px;
+    padding-top: 28px;
+  }
+  .name{
+    text-align: center;
   }
   
