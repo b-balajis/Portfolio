@@ -636,6 +636,7 @@
    .container{
      margin-left: auto;
      margin-right: auto;
+     width: 100%;
    }
 
    body{
@@ -681,8 +682,12 @@
      padding-top: 5.5rem;
      column-gap: 2rem;
    }
+   .home__data{
+     margin-inline-start: vw;
+   }
    .home__blob{
      width: 270px;
+     margin-left: 39vw;
    }
    .home__scroll{
      display: block;
@@ -690,15 +695,16 @@
    .home__scroll-button{
      margin-left: 3rem;
    }
+   .skills__titles{
+     padding: 7px;
+   }
 
    .about__container{
      column-gap: 5rem;
    }
-   .about__img{
-     width: 350px;
-   }
    .about__description{
      text-align: initial;
+     margin-left: 5vw;
    }
    .about__info{
      justify-content: space-between;
