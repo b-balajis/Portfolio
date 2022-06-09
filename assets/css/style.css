@@ -375,91 +375,6 @@
   justify-content: center;
 }
 
-/*skills*/
-
-.skills__container{
-  row-gap: 0;
-}
-
-.skills__header{
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
-}
-
-.skills__icon,
-.skills__arrow{
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.skills__icon{
-  margin-right: var(--mb-0-75);
-}
-
-.skills__title{
-  font-size: var(--h3-font-size);
-}
-
-.skills__subtitle{
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.skills__arrow{
-  margin-left: auto;
-  transition: .4s;
-}
-
-.skills__list{
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-.skills__titles{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-
-.skiils__name{
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.skills__bar,
-.skills__percentage{
-  height: 5px;
-  border-radius: .25rem;
-}
-
-.skills__bar{
-  background-color: var(--first-color-lighter);
-}
-
-.skills__percentage{
-  display: block;
-  background-color: var(--first-color);
-}
-
-.skills__html{
-  width: 90%;
-}
-
-.skills__close .skills__list{
-  height: 0;
-  overflow: hidden;
-}
-
-.skills__open .skills__list{
-  height: max-content;
-  margin-bottom: var(--mb-0-25);
-}
-
-.skills__open .skills__arrow{
-  transform: rotate(-180deg);
-}
-
 .contact__container{
   row-gap: 3rem;
 }
@@ -608,6 +523,25 @@
   .skills__title{
     font-size: var(--normal-font-size);
   }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
 }
 
 /* For medium devies */
@@ -618,10 +552,12 @@
    .home__data{
      order: 1;
      justify-self: center;
+     margin-left: 7vw;
    }
    .home__img{
      order: 1;
      justify-self: center;
+     margin-left: 50vw;
    }
 
    .about__container,
@@ -705,6 +641,7 @@
    .about__description{
      text-align: initial;
      margin-left: 5vw;
+     text-align: justify;
    }
    .about__info{
      justify-content: space-between;
@@ -730,6 +667,24 @@
       margin-top: 2rem;
       text-align: center;
    }
+   .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }  
   }
 
 /* For Large devies */
@@ -746,5 +701,28 @@
   .home__social{
     transform: translateX(-6rem);
   }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+  }
   
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  
+}
+
+.item{
+  color: black;
 }
