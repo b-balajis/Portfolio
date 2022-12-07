@@ -1,89 +1,247 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../assets/img/icon.png" rel="icon">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+        <!--Uni icons-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!--fonts-->
+      <!--Animation URL-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+      <!--CSS-->
+        <linK href="../assets/css/style.css" rel="stylesheet">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+        
+          <title>Balaji-Portfolio</title>
+    </head>
+    <body>
+      <!--Header-->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#home" class="nav__logo">Balaji</a>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+              <li class="nav_item">
+                <a href="#home" class="nav__link active-link">
+                  <i class="uil uil-estate nav__icon"></i>Home
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href="#about" class="nav__link">
+                  <i class="uil uil-user nav__icon"></i>About
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href="#skills" class="nav__link">
+                  <i class="uil uil-file-alt nav__icon"></i>Skills
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href="#projects" class="nav__link">
+                  <i class="uil uil-briefcase-alt nav__icon"></i>Projects
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                  <i class="uil uil-message nav__icon"></i>ContactMe
+                </a>
+              </li>
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+          </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+          <div class="nav__btns">
+            <div class="nav__toggles" id="nav-toggle">
+              <i class="uil uil-apps"></i>
+            </div>
+          </div>
+
+        </nav>
+      </header>
+  
+
+      <main class="main">
+        <!--HOME-->
+        <section class="home section" id="home">
+          <div class="home__container container">
+            <div class="home__content grid">
+              <div class="home__social">
+                <a href="https://www.linkedin.com/in/b-balajis/" class="home__social-icon">
+                  <i class="uil uil-linkedin-alt"></i>
+                </a>
+
+                <a href="mailto: balajibheemavarapu@gmail.com" class="home__social-icon">
+                  <i class="uil uil-envelope-alt"></i>
+                </a>
+                
+                <a href="https://github.com/b-balajis" class="home__social-icon">
+                  <i class="uil uil-github-alt"></i>
+                </a>
+              </div>
+              <div class="homepage">
+                <div class="home__img">
+                  <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        
+                        <image class="home__blob-img" x='18'y='-5' href="../assets/img/balajis.png"/>
+                    </g>
+                  </svg>
+                </div>
+                <div class="home__data">
+                  <h1 class="home__title">Hi, I am Balaji</h1>
+                  <h3 class="home__subtitle">Web Development Enthusiast</h3>
+                  <p class="home__description">Vice Chair of ACM GMRIT, Rajam.</p>
+                  <a href="#contact" class="button button--flex">
+                    Contact Me<i class="uil uil-message button__icon"></i>
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+            
+        </section>
+
+        <!--ABOUT-->
+        <section class="about section" id="about">
+          <h3 class="section__title">About Me</h3>
+          <div class="about__container container">
+            <div class="about__data">
+              <p class="about__description">I am pursing my 4th year B. Tech degree under the stream of Information Technology in GMR Institute of Technology. I am a Vice Chair of ACM GMRIT for 2022 - 2023 Academic Year. I am a Web Development Enthusiast.</p>
+              <div class="about__info">
+                <div class="about__buttons">
+                  <a download="" href="../assets/pdf/Balaji Bheemavarapu.pdf" class="button button--flex">
+                    Download Resume<i class="uil uil-download-alt button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about section" id="projects">
+          <h3 class="section__title">Projects</h3>
+          <div class="about__container container">
+            <div class="about__data">
+              <div class="about__info">
+                <div class="card">
+                  <img src="../assets/img/img_avatar2.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Online Food Orders</b></h4> 
+                    <p>This is the website build based on backend Technology PHP. You can order food using this platform</p> 
+                  </div>
+                </div> &nbsp; &nbsp;
+                <div class="card">
+                  <img src="../assets/img/img_avatar2.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Jane Doe</b></h4> 
+                    <p>Interior Designer</p> 
+                  </div>
+                </div> &nbsp; &nbsp;
+                <div class="card">
+                  <img src="../assets/img/img_avatar2.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Jane Doe</b></h4> 
+                    <p>Interior Designer</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--CONTACT ME-->
+        <section class="contact section" id="contact">
+          <h2 class="section__title">Contact Me</h2>
+          <div class="contact__container container">
+            <div>
+              <div class="contact__information">
+                <i class="uil uil-phone contact__icon"></i>
+
+                <div>
+                  <h3 class="contact__title">Call Me</h3>
+                  <span class="contact__subtitle">80080 75376</span>
+                </div>
+              </div>
+
+              <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
+
+                <div>
+                  <h3 class="contact__title">Email</h3>
+                  <span class="contact__subtitle">balajibheemavarapu@gmail.com</span>
+                </div>
+              </div>
+
+              <div class="contact__information">
+                <i class="uil uil-map-marker contact__icon"></i>
+
+                <div>
+                  <h3 class="contact__title">Location</h3>
+                  <span class="contact__subtitle">Rajam, GMRIT.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!--FOOTER-->
+      <footer class="footer">
+        <div class="footer__bg">
+          <div class="footer__container container grid">
+            <div>
+              <h1 class="footer__title">Balaji</h1>
+              <span class="footer__subtitle">Web Development Enthusiast</span>
+            </div>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#skills" class="footer__link">Skills</a>
+              </li>
+              <li>
+                <a href="#projects" class="footer__link">Projects</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer__link">ContactMe</a>
+              </li>
+            </ul>
+
+            <div class="footer__socials">
+              <a href="https://www.facebook.com/BBalajis" class="footer__social">
+                <i class="uil uil-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/balaji._.b/" class="footer__social">
+                <i class="uil uil-instagram"></i>
+              </a>
+              <a href="https://twitter.com/b_balajis" class="footer__social">
+                <i class="uil uil-twitter-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <p class="footer__copy">&#169; Balaji. All right reserved</p>
+        </div>
+      </footer>
+      
+
+      <script src=""></script>
+      <script src="../assets/"></script>
+    </body>
 </html>
